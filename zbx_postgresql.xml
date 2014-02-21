@@ -28,7 +28,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>logrt[&quot;/var/lib/pgsql/9.3/data/pg_log/postgresql-Fri.log&quot;,&quot;PANIC|FATAL|ERROR|[Ee]rror&quot;]</key>
+                    <key>logrt[&quot;/var/lib/pgsql/9.3/data/pg_log/postgresql-*.log&quot;,&quot;PANIC|FATAL|ERROR|[Ee]rror&quot;]</key>
                     <delay>1</delay>
                     <history>90</history>
                     <trends>365</trends>
