@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2013-11-29T01:00:15Z</date>
+    <date>2014-02-21T05:35:39Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -9,8 +9,8 @@
     </groups>
     <templates>
         <template>
-            <template>Conductor OS Linux</template>
-            <name>Conductor OS Linux</name>
+            <template>Conductor Monitoring for OS Linux</template>
+            <name>Conductor Monitoring for OS Linux</name>
             <groups>
                 <group>
                     <name>Templates</name>
@@ -61,9 +61,12 @@
                     <allowed_hosts/>
                     <units>B</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -100,9 +103,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -139,9 +145,12 @@
                     <allowed_hosts/>
                     <units>sps</units>
                     <delta>1</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -181,9 +190,12 @@
                     <allowed_hosts/>
                     <units>%</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -223,9 +235,12 @@
                     <allowed_hosts/>
                     <units>%</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -265,9 +280,12 @@
                     <allowed_hosts/>
                     <units>%</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -307,9 +325,12 @@
                     <allowed_hosts/>
                     <units>%</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -340,48 +361,6 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>system.cpu.util[,user]</key>
-                    <delay>60</delay>
-                    <history>7</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>0</value_type>
-                    <allowed_hosts/>
-                    <units>%</units>
-                    <delta>0</delta>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description>The time the CPU has spent running users' processes that are not niced.</description>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>CPU</name>
-                        </application>
-                        <application>
-                            <name>Performance</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                </item>
-                <item>
-                    <name>CPU $2 time</name>
-                    <type>0</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
                     <key>system.cpu.util[,idle]</key>
                     <delay>60</delay>
                     <history>7</history>
@@ -391,9 +370,12 @@
                     <allowed_hosts/>
                     <units>%</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -424,7 +406,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>system.cpu.util[,steal]</key>
+                    <key>system.cpu.util[,user]</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -433,9 +415,12 @@
                     <allowed_hosts/>
                     <units>%</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -448,7 +433,7 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <description>The amount of CPU 'stolen' from this virtual machine by the hypervisor for other tasks (such as running another virtual machine).</description>
+                    <description>The time the CPU has spent running users' processes that are not niced.</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
@@ -475,9 +460,12 @@
                     <allowed_hosts/>
                     <units>%</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -491,6 +479,51 @@
                     <privatekey/>
                     <port/>
                     <description>The amount of time the CPU has been servicing software interrupts.</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>CPU</name>
+                        </application>
+                        <application>
+                            <name>Performance</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>CPU $2 time</name>
+                    <type>0</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>system.cpu.util[,steal]</key>
+                    <delay>60</delay>
+                    <history>7</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>%</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>The amount of CPU 'stolen' from this virtual machine by the hypervisor for other tasks (such as running another virtual machine).</description>
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
@@ -517,9 +550,12 @@
                     <allowed_hosts/>
                     <units>B</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>0</formula>
                     <delay_flex/>
@@ -556,9 +592,12 @@
                     <allowed_hosts/>
                     <units>%</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -595,9 +634,12 @@
                     <allowed_hosts/>
                     <units>unixtime</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -637,9 +679,12 @@
                     <allowed_hosts/>
                     <units>unixtime</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -679,9 +724,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -721,9 +769,12 @@
                     <allowed_hosts/>
                     <units>ips</units>
                     <delta>1</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -763,9 +814,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -802,9 +856,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -841,9 +898,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -883,9 +943,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -922,9 +985,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -961,9 +1027,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -1003,9 +1072,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -1045,9 +1117,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -1087,9 +1162,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -1129,9 +1207,12 @@
                     <allowed_hosts/>
                     <units>uptime</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -1171,9 +1252,12 @@
                     <allowed_hosts/>
                     <units>B</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>0</formula>
                     <delay_flex/>
@@ -1210,9 +1294,12 @@
                     <allowed_hosts/>
                     <units>B</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -1245,9 +1332,12 @@
                     <delay>3600</delay>
                     <status>0</status>
                     <allowed_hosts/>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <delay_flex/>
                     <params/>
@@ -1277,9 +1367,12 @@
                             <allowed_hosts/>
                             <units>B</units>
                             <delta>0</delta>
+                            <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
                             <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
                             <formula>1</formula>
                             <delay_flex/>
@@ -1316,9 +1409,12 @@
                             <allowed_hosts/>
                             <units>%</units>
                             <delta>0</delta>
+                            <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
                             <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
                             <formula>1</formula>
                             <delay_flex/>
@@ -1355,9 +1451,12 @@
                             <allowed_hosts/>
                             <units>%</units>
                             <delta>0</delta>
+                            <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
                             <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
                             <formula>1</formula>
                             <delay_flex/>
@@ -1394,9 +1493,12 @@
                             <allowed_hosts/>
                             <units>B</units>
                             <delta>0</delta>
+                            <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
                             <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
                             <formula>1</formula>
                             <delay_flex/>
@@ -1433,9 +1535,12 @@
                             <allowed_hosts/>
                             <units>B</units>
                             <delta>0</delta>
+                            <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
                             <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
                             <formula>1</formula>
                             <delay_flex/>
@@ -1460,7 +1565,7 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Conductor OS Linux:vfs.fs.size[{#FSNAME},pfree].last(0)}&lt;20</expression>
+                            <expression>{Conductor Monitoring for OS Linux:vfs.fs.size[{#FSNAME},pfree].last(0)}&lt;20</expression>
                             <name>Free disk space is less than 20% on volume {#FSNAME}</name>
                             <url/>
                             <status>0</status>
@@ -1469,7 +1574,7 @@
                             <type>0</type>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Conductor OS Linux:vfs.fs.inode[{#FSNAME},pfree].last(0)}&lt;20</expression>
+                            <expression>{Conductor Monitoring for OS Linux:vfs.fs.inode[{#FSNAME},pfree].last(0)}&lt;20</expression>
                             <name>Free inodes is less than 20% on volume {#FSNAME}</name>
                             <url/>
                             <status>0</status>
@@ -1505,7 +1610,7 @@
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Conductor OS Linux</host>
+                                        <host>Conductor Monitoring for OS Linux</host>
                                         <key>vfs.fs.size[{#FSNAME},free]</key>
                                     </item>
                                 </graph_item>
@@ -1517,13 +1622,14 @@
                                     <calc_fnc>2</calc_fnc>
                                     <type>2</type>
                                     <item>
-                                        <host>Conductor OS Linux</host>
+                                        <host>Conductor Monitoring for OS Linux</host>
                                         <key>vfs.fs.size[{#FSNAME},total]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
                         </graph_prototype>
                     </graph_prototypes>
+                    <host_prototypes/>
                 </discovery_rule>
                 <discovery_rule>
                     <name>Network interface discovery</name>
@@ -1534,9 +1640,12 @@
                     <delay>3600</delay>
                     <status>0</status>
                     <allowed_hosts/>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <delay_flex/>
                     <params/>
@@ -1566,9 +1675,12 @@
                             <allowed_hosts/>
                             <units>bps</units>
                             <delta>1</delta>
+                            <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
                             <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
                             <formula>8</formula>
                             <delay_flex/>
@@ -1605,9 +1717,12 @@
                             <allowed_hosts/>
                             <units>bps</units>
                             <delta>1</delta>
+                            <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
                             <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
                             <formula>8</formula>
                             <delay_flex/>
@@ -1651,18 +1766,6 @@
                             <ymax_item_1>0</ymax_item_1>
                             <graph_items>
                                 <graph_item>
-                                    <sortorder>1</sortorder>
-                                    <drawtype>5</drawtype>
-                                    <color>3333FF</color>
-                                    <yaxisside>0</yaxisside>
-                                    <calc_fnc>2</calc_fnc>
-                                    <type>0</type>
-                                    <item>
-                                        <host>Conductor OS Linux</host>
-                                        <key>net.if.out[{#IFNAME}]</key>
-                                    </item>
-                                </graph_item>
-                                <graph_item>
                                     <sortorder>0</sortorder>
                                     <drawtype>5</drawtype>
                                     <color>00AA00</color>
@@ -1670,13 +1773,26 @@
                                     <calc_fnc>2</calc_fnc>
                                     <type>0</type>
                                     <item>
-                                        <host>Conductor OS Linux</host>
+                                        <host>Conductor Monitoring for OS Linux</host>
                                         <key>net.if.in[{#IFNAME}]</key>
+                                    </item>
+                                </graph_item>
+                                <graph_item>
+                                    <sortorder>1</sortorder>
+                                    <drawtype>5</drawtype>
+                                    <color>3333FF</color>
+                                    <yaxisside>0</yaxisside>
+                                    <calc_fnc>2</calc_fnc>
+                                    <type>0</type>
+                                    <item>
+                                        <host>Conductor Monitoring for OS Linux</host>
+                                        <key>net.if.out[{#IFNAME}]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
                         </graph_prototype>
                     </graph_prototypes>
+                    <host_prototypes/>
                 </discovery_rule>
             </discovery_rules>
             <macros/>
@@ -1708,8 +1824,9 @@
                             <sort_triggers>0</sort_triggers>
                             <resource>
                                 <name>CPU load</name>
-                                <host>Conductor OS Linux</host>
+                                <host>Conductor Monitoring for OS Linux</host>
                             </resource>
+                            <application/>
                         </screen_item>
                         <screen_item>
                             <resourcetype>0</resourcetype>
@@ -1728,8 +1845,9 @@
                             <sort_triggers>0</sort_triggers>
                             <resource>
                                 <name>CPU utilization</name>
-                                <host>Conductor OS Linux</host>
+                                <host>Conductor Monitoring for OS Linux</host>
                             </resource>
+                            <application/>
                         </screen_item>
                         <screen_item>
                             <resourcetype>1</resourcetype>
@@ -1748,8 +1866,9 @@
                             <sort_triggers>0</sort_triggers>
                             <resource>
                                 <key>proc.num[,,run]</key>
-                                <host>Conductor OS Linux</host>
+                                <host>Conductor Monitoring for OS Linux</host>
                             </resource>
+                            <application/>
                         </screen_item>
                         <screen_item>
                             <resourcetype>1</resourcetype>
@@ -1768,8 +1887,9 @@
                             <sort_triggers>0</sort_triggers>
                             <resource>
                                 <key>vm.memory.size[available]</key>
-                                <host>Conductor OS Linux</host>
+                                <host>Conductor Monitoring for OS Linux</host>
                             </resource>
+                            <application/>
                         </screen_item>
                     </screen_items>
                 </screen>
@@ -1778,7 +1898,7 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{Conductor OS Linux:vfs.file.cksum[/etc/passwd].diff(0)}&gt;0</expression>
+            <expression>{Conductor Monitoring for OS Linux:vfs.file.cksum[/etc/passwd].diff(0)}&gt;0</expression>
             <name>/etc/passwd has been changed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -1788,7 +1908,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Conductor OS Linux:kernel.maxfiles.last(0)}&lt;1024</expression>
+            <expression>{Conductor Monitoring for OS Linux:kernel.maxfiles.last(0)}&lt;1024</expression>
             <name>Configured max number of opened files is too low on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -1798,7 +1918,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Conductor OS Linux:kernel.maxproc.last(0)}&lt;256</expression>
+            <expression>{Conductor Monitoring for OS Linux:kernel.maxproc.last(0)}&lt;256</expression>
             <name>Configured max number of processes is too low on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -1808,7 +1928,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Conductor OS Linux:system.cpu.util[,system].avg(300)}&gt;90</expression>
+            <expression>{Conductor Monitoring for OS Linux:system.cpu.util[,system].avg(300)}&gt;90</expression>
             <name>CPU  Usage too High</name>
             <url/>
             <status>0</status>
@@ -1818,7 +1938,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Conductor OS Linux:system.cpu.util[,iowait].last(0)}&gt;20</expression>
+            <expression>{Conductor Monitoring for OS Linux:system.cpu.util[,iowait].last(0)}&gt;20</expression>
             <name>Disk I/O is overloaded on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -1828,7 +1948,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Conductor OS Linux:system.uname.diff(0)}&gt;0</expression>
+            <expression>{Conductor Monitoring for OS Linux:system.uname.diff(0)}&gt;0</expression>
             <name>Host information was changed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -1838,7 +1958,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Conductor OS Linux:system.hostname.diff(0)}&gt;0</expression>
+            <expression>{Conductor Monitoring for OS Linux:system.hostname.diff(0)}&gt;0</expression>
             <name>Hostname was changed on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -1848,7 +1968,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Conductor OS Linux:vm.memory.size[available].last(0)}&lt;20M</expression>
+            <expression>{Conductor Monitoring for OS Linux:vm.memory.size[available].last(0)}&lt;20M</expression>
             <name>Lack of available memory on server {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -1858,7 +1978,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Conductor OS Linux:system.swap.size[,pfree].last(0)}&lt;50</expression>
+            <expression>{Conductor Monitoring for OS Linux:system.swap.size[,pfree].last(0)}&lt;50</expression>
             <name>Lack of free swap space on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -1868,7 +1988,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Conductor OS Linux:system.cpu.load[percpu,avg1].last(0)}&gt;5</expression>
+            <expression>{Conductor Monitoring for OS Linux:system.cpu.load[percpu,avg1].last(0)}&gt;5</expression>
             <name>Processor load is too high on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -1878,7 +1998,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Conductor OS Linux:proc.num[].last(0)}&gt;300</expression>
+            <expression>{Conductor Monitoring for OS Linux:proc.num[].last(0)}&gt;300</expression>
             <name>Too many processes on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -1888,7 +2008,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Conductor OS Linux:proc.num[,,run].last(0)}&gt;30</expression>
+            <expression>{Conductor Monitoring for OS Linux:proc.num[,,run].last(0)}&gt;30</expression>
             <name>Too many processes running on {HOST.NAME}</name>
             <url/>
             <status>0</status>
@@ -1898,7 +2018,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Conductor OS Linux:system.uptime.change(0)}&lt;0</expression>
+            <expression>{Conductor Monitoring for OS Linux:system.uptime.change(0)}&lt;0</expression>
             <name>{HOST.NAME} has just been restarted</name>
             <url/>
             <status>0</status>
@@ -1935,7 +2055,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Conductor OS Linux</host>
+                        <host>Conductor Monitoring for OS Linux</host>
                         <key>system.cpu.intr</key>
                     </item>
                 </graph_item>
@@ -1947,7 +2067,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Conductor OS Linux</host>
+                        <host>Conductor Monitoring for OS Linux</host>
                         <key>system.cpu.switches</key>
                     </item>
                 </graph_item>
@@ -1972,18 +2092,6 @@
             <ymax_item_1>0</ymax_item_1>
             <graph_items>
                 <graph_item>
-                    <sortorder>0</sortorder>
-                    <drawtype>0</drawtype>
-                    <color>009900</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
-                    <item>
-                        <host>Conductor OS Linux</host>
-                        <key>system.cpu.load[percpu,avg1]</key>
-                    </item>
-                </graph_item>
-                <graph_item>
                     <sortorder>1</sortorder>
                     <drawtype>0</drawtype>
                     <color>000099</color>
@@ -1991,8 +2099,20 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Conductor OS Linux</host>
+                        <host>Conductor Monitoring for OS Linux</host>
                         <key>system.cpu.load[percpu,avg5]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>009900</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Conductor Monitoring for OS Linux</host>
+                        <key>system.cpu.load[percpu,avg1]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -2003,7 +2123,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Conductor OS Linux</host>
+                        <host>Conductor Monitoring for OS Linux</host>
                         <key>system.cpu.load[percpu,avg15]</key>
                     </item>
                 </graph_item>
@@ -2028,39 +2148,15 @@
             <ymax_item_1>0</ymax_item_1>
             <graph_items>
                 <graph_item>
-                    <sortorder>7</sortorder>
+                    <sortorder>5</sortorder>
                     <drawtype>1</drawtype>
-                    <color>000099</color>
+                    <color>999900</color>
                     <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Conductor OS Linux</host>
-                        <key>system.cpu.util[,user]</key>
-                    </item>
-                </graph_item>
-                <graph_item>
-                    <sortorder>3</sortorder>
-                    <drawtype>1</drawtype>
-                    <color>009999</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
-                    <item>
-                        <host>Conductor OS Linux</host>
-                        <key>system.cpu.util[,interrupt]</key>
-                    </item>
-                </graph_item>
-                <graph_item>
-                    <sortorder>1</sortorder>
-                    <drawtype>1</drawtype>
-                    <color>FF5555</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
-                    <item>
-                        <host>Conductor OS Linux</host>
-                        <key>system.cpu.util[,steal]</key>
+                        <host>Conductor Monitoring for OS Linux</host>
+                        <key>system.cpu.util[,iowait]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -2071,32 +2167,20 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Conductor OS Linux</host>
+                        <host>Conductor Monitoring for OS Linux</host>
                         <key>system.cpu.util[,nice]</key>
                     </item>
                 </graph_item>
                 <graph_item>
-                    <sortorder>5</sortorder>
+                    <sortorder>3</sortorder>
                     <drawtype>1</drawtype>
-                    <color>999900</color>
+                    <color>009999</color>
                     <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Conductor OS Linux</host>
-                        <key>system.cpu.util[,iowait]</key>
-                    </item>
-                </graph_item>
-                <graph_item>
-                    <sortorder>2</sortorder>
-                    <drawtype>1</drawtype>
-                    <color>55FF55</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>0</type>
-                    <item>
-                        <host>Conductor OS Linux</host>
-                        <key>system.cpu.util[,softirq]</key>
+                        <host>Conductor Monitoring for OS Linux</host>
+                        <key>system.cpu.util[,interrupt]</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -2107,7 +2191,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Conductor OS Linux</host>
+                        <host>Conductor Monitoring for OS Linux</host>
                         <key>system.cpu.util[,system]</key>
                     </item>
                 </graph_item>
@@ -2119,8 +2203,44 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Conductor OS Linux</host>
+                        <host>Conductor Monitoring for OS Linux</host>
                         <key>system.cpu.util[,idle]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>7</sortorder>
+                    <drawtype>1</drawtype>
+                    <color>000099</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Conductor Monitoring for OS Linux</host>
+                        <key>system.cpu.util[,user]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <drawtype>1</drawtype>
+                    <color>FF5555</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Conductor Monitoring for OS Linux</host>
+                        <key>system.cpu.util[,steal]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <drawtype>1</drawtype>
+                    <color>55FF55</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>Conductor Monitoring for OS Linux</host>
+                        <key>system.cpu.util[,softirq]</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -2144,18 +2264,6 @@
             <ymax_item_1>0</ymax_item_1>
             <graph_items>
                 <graph_item>
-                    <sortorder>0</sortorder>
-                    <drawtype>0</drawtype>
-                    <color>AA0000</color>
-                    <yaxisside>0</yaxisside>
-                    <calc_fnc>2</calc_fnc>
-                    <type>2</type>
-                    <item>
-                        <host>Conductor OS Linux</host>
-                        <key>system.swap.size[,total]</key>
-                    </item>
-                </graph_item>
-                <graph_item>
                     <sortorder>1</sortorder>
                     <drawtype>0</drawtype>
                     <color>00AA00</color>
@@ -2163,8 +2271,20 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>Conductor OS Linux</host>
+                        <host>Conductor Monitoring for OS Linux</host>
                         <key>system.swap.size[,free]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>AA0000</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>2</type>
+                    <item>
+                        <host>Conductor Monitoring for OS Linux</host>
+                        <key>system.swap.size[,total]</key>
                     </item>
                 </graph_item>
             </graph_items>
