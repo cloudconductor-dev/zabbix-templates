@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2014-02-21T05:35:53Z</date>
+    <date>2014-02-25T02:06:24Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -28,7 +28,7 @@
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>logrt[&quot;/var/lib/pgsql/9.3/data/pg_log/postgresql-*.log&quot;,&quot;PANIC|FATAL|ERROR|[Ee]rror&quot;]</key>
+                    <key>logrt[&quot;/var/lib/pgsql/9.3/data/pg_log/postgresql-.*\.log&quot;,&quot;PANIC|FATAL|ERROR|[Ee]rror&quot;]</key>
                     <delay>1</delay>
                     <history>90</history>
                     <trends>365</trends>
